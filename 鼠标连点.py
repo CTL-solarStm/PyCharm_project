@@ -78,9 +78,9 @@ class Application(tk.Frame):
         self.instructions.configure(text=f"按 {self.start_key} 开始连点，按 {' 或 '.join(self.stop_keys)} 切换角色来停止连点")
 
     def on_press(self, key):
-        if key == pynput_kb.Key.esc:
+        #if key == pynput_kb.Key.esc:
             # 如果按下了 Esc 键，停止监听
-            return False
+        #    return False
 
         try:
             key_name = key.char
